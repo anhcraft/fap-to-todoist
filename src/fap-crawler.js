@@ -22,7 +22,7 @@ for(let slot = 0; slot < table.length; slot++){
 
         let subject = row[j].querySelector("p a:nth-child(1)").innerText.slice(0, -1)
         let place = row[j].querySelector("p").innerText
-        place = place.substring(place.indexOf("at ") + 3).match(/^((Sân trường [0-9])|\S+)( |\n)/igu)
+        place = place.substring(place.indexOf("at ") + 3).match(/^((Sân trường [0-9])|Sân bóng|\S+)( |\n)/igu)
 
         let online = row[j].querySelector(".online-indicator") !==  null
 
