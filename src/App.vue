@@ -64,7 +64,9 @@ export default {
           priority: 4,
           due_datetime: new Date(v.date).toISOString()
         }).catch((error) => console.log(error))
-      })
+      });
+
+      alert("Đã tạo xong!")
     }
   }
 }
